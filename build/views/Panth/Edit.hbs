@@ -1,0 +1,30 @@
+
+
+<div class="col-md-6 mx-auto">
+<form action="/panth/edit/{{panth._id}}?_method=PUT" method="post">
+<input type="hidden" name="_method" value="PUT">
+        <div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Name</label>
+  <input name="name" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name of Panth" value="{{panth.name}}">
+</div>
+    <div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Kingdom</label>
+  <input name="kingdom" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Panth's Kingdom" value="{{panth.kingdom}}">
+</div>
+    <div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Represents</label>
+  <input name="represent" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Panth's Represents" value="{{panth.represent}}">
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Description of the Panth</label>
+  <textarea name="description" class="form-control" id="exampleFormControlTextarea1" rows="8"> {{panth.description}} </textarea>
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Picture URL</label>
+  <input name="picUrl" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Picture URL" value="{{panth.picUrl}}">
+</div>
+<div class="d-grid">
+<button type="submit" class="btn btn-outline-primary">Register Panth!</button>
+</div>
+</form>
+</div>

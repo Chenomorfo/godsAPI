@@ -1,0 +1,26 @@
+<div class="row">
+
+  {{#each panths}}
+    <style>
+      img{ width: 100%; height: 350px; object-fit: cover; object-position: top;
+      }
+    </style>
+    <div class="col-md-4 mt-2">
+      <div class="card">
+        <div class="card-body">
+          <img src="{{picUrl}}" />
+        </div>
+        <h3 class="card-header">{{kingdom}}</h3>
+        <h6 class="card-header">{{represent}}</h6>
+      </div>
+      <div class="d-flex gap-5  mx-auto">
+  <a href="/panth/edit/{{_id}}" class="btn btn-outline-secondary col-5" type="button">Edit</a>
+  <form action="panth/delete/{{_id}}?_method=DELETE" class="col-12" method="post">
+  <input type="hidden" name="_method" value="DELETE">
+     <button class="btn btn-outline-danger col-5" type="submit">Delete</button>
+  </form>
+</div>
+    </div>
+  {{/each}} 
+
+</div>
